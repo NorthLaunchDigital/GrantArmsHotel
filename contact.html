@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Grant Arms Hotel</title>
+  <meta name="description" content="Contact Grant Arms Hotel using the form that opens your email app with the enquiry details prefilled.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Grant Arms Hotel home">
+        <span class="brand-mark">GAH</span>
+        <span class="brand-text">
+          <strong>Grant Arms Hotel</strong>
+          <small>Grantown on Spey</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow">Contact</p>
+      <h1>Send an enquiry directly from your email app.</h1>
+      <p class="lead">
+        The hotel’s published contact email is reception@grantarmshotel.com, and the address is 25–27 The Square, Grantown on Spey, PH26 3HF. [web:4][web:9]
+      </p>
+    </section>
+
+    <section class="section container contact-grid">
+      <article class="contact-card">
+        <h2>Hotel details</h2>
+        <ul class="contact-list">
+          <li><strong>Address:</strong> 25–27 The Square, Grantown on Spey, PH26 3HF</li>
+          <li><strong>Email:</strong> <a href="mailto:reception@grantarmshotel.com">reception@grantarmshotel.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+441479872526">+44 1479 872526</a></li>
+        </ul>
+      </article>
+
+      <article class="contact-card">
+        <h2>Enquiry form</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+44">
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required placeholder="Dinner reservation / room enquiry">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell us your preferred dates, party size, and any special requests."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Open Email App</button>
+          <p class="form-note">Submitting opens your installed email app with a prefilled message to the hotel.</p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Grant Arms Hotel • Reception enquiries welcome</p>
+      <p><a href="mailto:reception@grantarmshotel.com">reception@grantarmshotel.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
