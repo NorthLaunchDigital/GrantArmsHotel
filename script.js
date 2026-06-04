@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message
       ].filter(Boolean).join('\n');
 
-      const mailto = `mailto:reception@grantarmshotel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `grantarmshotel@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
     });
   }
